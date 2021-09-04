@@ -5,8 +5,7 @@ James Araya Rodríguez- B70528
 Para ejecutar este codigo se utiliza C++17
 
 Si se desea ejecutarlo desde una terminal los codigos necesarios son:
-g++ -g./src/*.cpp
-g++ -o /obj/tarea01.exe
+g++ -g./src/*.cpp -o /obj/tarea01.exe
 
 -Esta tarea programada, consiste en crear un programa que calcule los costos de envio segun precios establecidos para cada tipo de envio diferente.
 -Archivo main (el cual funciona como el cliente).
