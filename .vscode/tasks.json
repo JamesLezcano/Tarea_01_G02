@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:/msys64/mingw64/bin/g++.exe",
+			"args": [
+				"-std=c++17",
+				"-g",
+				"${workspaceFolder}/src/*.cpp",
+				"-o",
+				"${workspaceFolder}/obj/clase03.exe",
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compilador: C:\\msys64\\mingw64\\bin\\g++.exe"
+		},
+		{
+            "label": "C/C++: g++ run tests",
+            "type": "shell",
+            "command": "g++ -std=c++17 -g .\\src\\*.cpp .\\test\\*.cpp -lgtest -lgtest_main -lpthread  -DUNIT_TEST -o .\\obj\\tests.exe",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+	]
+}
