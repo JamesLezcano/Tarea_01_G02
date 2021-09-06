@@ -40,7 +40,7 @@ int main(){
         totalMontoEnvios += envio->calculoEnvio();
     }
     //Se imprime el monto
-    cout << "El monto total de los envíos es de " << totalMontoEnvios << endl;
+    cout << endl <<" El monto total de los envíos es de " << totalMontoEnvios << endl<< endl;
     //Se destruyen los punteros y se libera memoria
     delete postal1;
     delete postal2;
