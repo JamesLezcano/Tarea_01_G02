@@ -18,7 +18,7 @@ using namespace std;
 int main(){
     //Se crean los punteros a los diferentes costos
     Postal * postal1 = new Postal(2,3);
-    Postal * postal2 = new Postal(2,2);
+    Postal * postal2 = new Postal(4,2);
     Postal * postal3 = new Postal(2,1);
     Fedex * fedex1 = new Fedex(2,2);
     Fedex * fedex2 = new Fedex(501,2);

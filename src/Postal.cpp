@@ -16,7 +16,7 @@ Postal::Postal(int kilometros,int clase){
  * 
  * Devuelve el costo del envio segun la clase y los kilometros recorridos
  * 
- * @return monto que costara el envio
+ * @return retorna el monto que costara el envio
  */
 double Postal::calculoEnvio(){
     int kilometros=this->kilometros;

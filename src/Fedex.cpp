@@ -16,7 +16,7 @@ Fedex::Fedex(int distancia,int peso){
  * 
  * Devuelve el costo del envio segun la clase y los kilometros recorridos
  * 
- * @return monto que costara el envio
+ * @return retorna el monto que costara el envio
  */
 double Fedex::calculoEnvio(){
     int distancia=this->distancia;
