@@ -2,7 +2,7 @@
 #include "../src/Fedex.hpp"
 
 namespace {
-    TEST(EnvioTestsFedex1, calculoEnvio_TestFedex1) {  //menos de 500km y menos de 4kg
+    TEST(EnvioTestFedexmenos500menos4kg, calculoEnvio_TestFedexmenos500menos4kg) {  //menos de 500km y menos de 4kg
         
         Fedex fedex1{2,2};
 
@@ -11,7 +11,7 @@ namespace {
     }
 }
 namespace {
-    TEST(EnvioTestsFedex2, calculoEnvio_TestFedex2) {  //mas de 500km y menos de 4kg
+    TEST(EnvioTestFedexmas500menos4kg, calculoEnvio_TestFedexmas500menos4kg) {  //mas de 500km y menos de 4kg
         
         Fedex fedex2{501,2};
        
@@ -21,7 +21,7 @@ namespace {
     }
 }
 namespace {
-    TEST(EnvioTestsFedex3, calculoEnvio_TestFedex3) {  //menos de 500km y mas de 4kg
+    TEST(EnvioTestFedexmenos500mas4kg, calculoEnvio_TestFedexmenos500mas4kg) {  //menos de 500km y mas de 4kg
         
         Fedex fedex3{2,6};
         double actual=fedex3.calculoEnvio();
@@ -30,7 +30,7 @@ namespace {
     }
 }
 namespace {
-    TEST(EnvioTestsFedex4, calculoEnvio_TestFedex4) {  //mas de 500km y mas de 4kg
+    TEST(EnvioTestFedexmas500mas4kg, calculoEnvio_TestFedexmas500mas4kg) {  //mas de 500km y mas de 4kg
         
         Fedex fedex4{501,6};
         double actual=fedex4.calculoEnvio();
